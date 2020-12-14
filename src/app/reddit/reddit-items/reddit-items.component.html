@@ -1,0 +1,24 @@
+<mat-card class="no-reddit" *ngIf="detailsRedditList?.length === 0">
+    <h3>Nothing found!</h3>
+</mat-card>
+<div *ngIf="detailsRedditList?.length > 0" class="container">
+    <mat-card
+        class="card"
+        *ngFor="let item of detailsRedditList"
+        [routerLink]="[item?.data?.id]">
+        <mat-card-header>
+        <mat-card-subtitle>{{ item?.data?.title }}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-actions class="card__footer">
+        <span class="card__footer__vote">
+            <mat-icon>thumb_down</mat-icon>
+            <span>{{ item?.data?.downVote }}</span>
+        </span>
+        <span class="card__footer__vote">
+            <mat-icon>thumb_up</mat-icon>
+            <span>{{ item?.data?.upVote }}</span>
+        </span>
+        </mat-card-actions>
+    </mat-card>
+</div>
+

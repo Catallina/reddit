@@ -1,0 +1,24 @@
+<red-header></red-header>
+<div class="container">
+    <mat-card class="container__card" *ngIf="scopeRedditItem">
+        <mat-card-header class="container__card__header">
+        <mat-card-subtitle>
+          <span [ngStyle]="{'color': '#3f51b5'}"> Title: </span>
+          {{ scopeRedditItem?.data?.title }}
+        </mat-card-subtitle>
+        <button
+            mat-button
+            matSuffix
+            mat-icon-button
+            aria-label="Close"
+            class="close-button"
+            (click)="onCloseDetails()">
+            <mat-icon>close</mat-icon>
+        </button>
+        </mat-card-header>
+        <mat-card-content>
+            <span [ngStyle]="{'color': '#3f51b5'}"> Description: </span>
+            {{ scopeRedditItem?.data?.selfText ? scopeRedditItem.data.selfText : 'No text' }}
+        </mat-card-content>
+    </mat-card>
+</div>

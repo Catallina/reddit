@@ -1,0 +1,43 @@
+@import '~@angular/material/theming';
+
+@import 'src/assets/themes/palettes.scss';
+
+@mixin header-mixin() {
+    .input-field {
+        height: 2.5rem;
+
+        &.mat-form-field-appearance-outline {
+
+            .mat-form-field-infix {
+                padding: 0;
+                margin-bottom: auto;
+            }
+        }
+
+        .mat-form-field-flex {
+            height: 2.5rem;
+        }
+
+        &.mat-form-field
+        .mat-form-field-suffix .mat-icon-button {
+          width: 1.5rem;
+        }
+
+        .mat-form-field-suffix
+        .mat-icon {
+          font-size: 130%
+        }
+    }
+
+}
+
+@mixin header-theme($theme) {
+    red-header {
+        .mat-form-field-appearance-outline.mat-focused
+        .mat-form-field-outline-thick {
+          color: mat-color($primary-palette, 100)
+        }
+
+        @include header-mixin();
+    }
+}

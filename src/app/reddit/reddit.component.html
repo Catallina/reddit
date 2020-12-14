@@ -1,0 +1,11 @@
+<red-header></red-header>
+<mat-list>
+    <mat-list-item *ngIf="subReddit === defaultQuery"> Most {{ subReddit }} </mat-list-item>
+    <mat-list-item *ngIf="subReddit !== defaultQuery"> {{ subReddit }} </mat-list-item>
+    <mat-list-item
+      *ngIf="subReddit !== defaultQuery">
+      <span class="search-result"> Search result </span>
+    </mat-list-item>
+</mat-list>
+
+<red-reddit-items></red-reddit-items>

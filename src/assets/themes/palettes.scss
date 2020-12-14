@@ -1,0 +1,96 @@
+@import '~@angular/material/theming';
+
+$neutral-palette: (
+    50: #ffffff,
+    100: #f4f4f4,
+    200: #eaeaea,
+    300: #e1e1e1,
+    500: #d3d3d3,
+    600: #b2b2b2,
+    700: #6f6f6f,
+    800: #424242,
+    900: #282828,
+    A100: #ffffff,
+    A200: #d3d3d3,
+    A400: #6f6f6f,
+    A700: #282828,
+    contrast: (
+        50: $dark-primary-text,
+        100: $dark-primary-text,
+        200: $dark-primary-text,
+        300: $dark-primary-text,
+        400: $dark-primary-text,
+        500: $dark-primary-text,
+        600: $dark-primary-text,
+        700: $light-primary-text,
+        800: $light-primary-text,
+        900: $light-primary-text,
+        A100: $dark-primary-text,
+        A200: $dark-primary-text,
+        A400: $light-primary-text,
+        A700: $light-primary-text
+    )
+);
+
+$primary-palette: (
+    50: #c7c9ca,
+    100: #DAE0E6,
+    300: #99c7e4,
+    400: #0DA2FF,
+    500: #0074bc,
+    700: #0064a6,
+    900: #003366,
+    contrast: (
+        50: $dark-primary-text,
+        100: $dark-primary-text,
+        300: $dark-primary-text,
+        500: $light-primary-text,
+        700: $light-primary-text,
+        900: $light-primary-text
+    )
+);
+
+$accent-palette: (
+    100: #d2e5ca,
+    200: #94c11c,
+    300: #97c284,
+    400: #2abb8a,
+    500: #6aa84f,
+    700: #62a048,
+    contrast: (
+        100: $dark-primary-text,
+        200: $dark-primary-text,
+        300: $dark-primary-text,
+        400: $dark-primary-text,
+        500: $dark-primary-text,
+        700: $light-primary-text,
+    )
+);
+
+$alert-palette: (
+    100: #ff543c,
+    200: #e3000f,
+    300: #a80000,
+
+    400: #c8f456,
+    500: #94c11c,
+    600: #619000,
+
+    700: #ffec4d,
+    800: #fbba00,
+    900: #c38a00,
+    contrast: (
+        100: $light-primary-text,
+        200: $light-primary-text,
+        300: $light-primary-text,
+
+        400: $dark-primary-text,
+        500: $dark-primary-text,
+        600: $light-primary-text,
+
+        700: $dark-primary-text,
+        800: $dark-primary-text,
+        900: $light-primary-text,
+    )
+);
+

@@ -1,0 +1,10 @@
+<span class="message">
+    {{ data.message }}
+</span>
+
+<button
+    mat-button
+    *ngIf="data.dismissible"
+    (click)="dismiss()">
+    {{ data.action }}
+</button>

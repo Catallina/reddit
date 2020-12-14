@@ -1,0 +1,19 @@
+@import '~@angular/material/theming';
+@include mat-core();
+
+@import 'palettes';
+@import 'common/values';
+
+@import 'partials/header.theme.scss';
+@import 'partials/reddit-items.theme.scss';
+
+$default-primary: mat-palette($primary-palette, 700, 300, 700);
+$default-accent: mat-palette($accent-palette, 500, 300, 700);
+$default-warn: mat-palette($alert-palette, 200, 100, 300);
+
+$default-theme: mat-light-theme($default-primary, $default-accent, $default-warn);
+
+body {
+  @include header-theme($default-theme);
+  @include reddit-items-theme($default-theme);
+}

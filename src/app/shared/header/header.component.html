@@ -1,0 +1,29 @@
+<mat-toolbar class="toolbar" color="primary">
+    <img
+        class="toolbar__reddit-logo"
+        src="assets\images\reddit-2.svg"
+        [routerLink]="['/reddit']">
+    <form class="toolbar__form">
+        <mat-form-field
+            appearance="outline"
+            class="input-field">
+            <input
+                matInput
+                placeholder="Search"
+                name="query"
+                [(ngModel)]="subRedditQuery"
+                (keyup.enter)="onBlurField($event)"
+                (click)="onSelectField($event)"
+                (ngModelChange)="onResetInput($event)">
+              <button
+                  mat-button
+                  *ngIf="subRedditQuery"
+                  matSuffix
+                  mat-icon-button
+                  aria-label="Clear">
+                  <mat-icon (click)="onClearContentInput()">close</mat-icon>
+              </button>
+        </mat-form-field>
+    </form>
+</mat-toolbar>
+

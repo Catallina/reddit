@@ -1,0 +1,9 @@
+@import '~@angular/material/theming';
+
+@import 'src/assets/themes/palettes.scss';
+
+@mixin reddit-items-theme($theme) {
+    red-reddit-items {
+        background-color: mat-color($primary-palette, 100);
+    }
+}

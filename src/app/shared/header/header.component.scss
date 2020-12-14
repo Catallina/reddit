@@ -1,0 +1,26 @@
+@import 'src/assets/themes/common/values.scss';
+
+.toolbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    &__reddit-logo {
+        width: 2rem;
+        height: 2rem;
+        padding-right: $padding-075;
+        cursor: pointer;
+    }
+
+    &__form {
+        min-width: 150px;
+        max-width: 500px;
+        width: 100%;
+
+        .input-field {
+        width: 100%;
+        padding-right: $padding-050;
+        font-size: 1rem;
+        }
+    }
+}
